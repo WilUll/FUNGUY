@@ -1,5 +1,5 @@
 {
-    "name": "InputSystem",
+    "name": "PlayerControls",
     "maps": [
         {
             "name": "Player",
@@ -24,9 +24,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Camera",
+                    "name": "Attack",
                     "type": "Button",
-                    "id": "25fe16d8-5c87-41f9-b79c-aa1398b9d117",
+                    "id": "a15ccaf0-e507-4b51-92ac-104b9b8862fb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "5c17ad52-086d-40c7-a2e4-1a5ea49a37c9",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -101,37 +110,26 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "SnapRotation",
-                    "id": "70da7ea1-922d-4123-bf33-ff9fe779ecb2",
-                    "path": "1DAxis",
+                    "name": "",
+                    "id": "69c1e942-414a-493b-a493-b3b1bab11f0e",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Camera",
-                    "isComposite": true,
+                    "action": "Attack",
+                    "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
-                    "id": "a815dab4-099b-4468-b403-5e37a7eda648",
-                    "path": "<Keyboard>/q",
+                    "name": "",
+                    "id": "0f5f1d82-2b39-42c2-bef6-0422616fc09e",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Camera",
+                    "groups": "",
+                    "action": "Jump",
                     "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "33f01518-9ea8-4386-b3a2-c7fc8aac9fb0",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Camera",
-                    "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 }
             ]
         }

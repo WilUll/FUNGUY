@@ -8,24 +8,36 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
     
-    
     private PlayerControls inputActions;
 
     private Camera camera;
 
-    private Rigidbody rb;
-
-
+    private CharacterController characterController;
+    private InteractionController interactionController;
+    
     private Vector3 move;
     private void Awake()
     {
         inputActions = new PlayerControls();
-        rb = GetComponent<Rigidbody>();
+        characterController = GetComponent<CharacterController>();
+        interactionController = GetComponent<InteractionController>();
     }
 
     private void OnEnable()
     {
         inputActions.Enable();
+        
+        inputActions.Player.Interact.started += OnInteractPressed;
+    }
+
+    private void OnInteractReleased(InputAction.CallbackContext obj)
+    {
+        interactionController.OnInteractPressed();
+    }
+
+    private void OnInteractPressed(InputAction.CallbackContext obj)
+    {
+        interactionController.OnInteractReleased();
     }
 
     private void OnDisable()
@@ -36,6 +48,12 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         GetInputs();
+        GetActions();
+    }
+
+    private void GetActions()
+    {
+        
     }
 
     private void GetInputs()
@@ -43,6 +61,16 @@ public class PlayerController : MonoBehaviour
         //Movement
         Vector2 movement = GetPlayerMovement();
          move = transform.right * movement.x + transform.forward * movement.y;
+
+         
+         if (!characterController.isGrounded)
+         {
+             move.y += -9.82f;
+         }
+         else
+         {
+             move.y = 0f;
+         }
     }
 
     private void FixedUpdate()
@@ -52,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        rb.velocity = (move * (speed * Time.deltaTime));
+        characterController.Move(move * speed * Time.deltaTime);
     }
 
     private Vector2 GetPlayerMovement()
