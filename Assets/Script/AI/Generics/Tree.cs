@@ -1,24 +1,27 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public abstract class Tree : MonoBehaviour
+namespace AI
 {
-    private Node root = null;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
 
-    protected void Start()
+    public abstract class Tree : MonoBehaviour
     {
-        root = SetupTree();
-    }
+        private Node root = null;
 
-    private void Update()
-    {
-        if (root != null)
+        protected void Start()
         {
-            root.Evaluate();
+            root = SetupTree();
         }
-    }
 
-    protected abstract Node SetupTree();
+        private void Update()
+        {
+            if (root != null)
+            {
+                root.Evaluate();
+            }
+        }
+
+        protected abstract Node SetupTree();
+    }
 }

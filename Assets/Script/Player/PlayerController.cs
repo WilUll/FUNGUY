@@ -26,23 +26,25 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         inputActions.Enable();
-        
+
         inputActions.Player.Interact.started += OnInteractPressed;
+        inputActions.Player.Interact.canceled += OnInteractReleased;
     }
 
     private void OnInteractReleased(InputAction.CallbackContext obj)
     {
-        interactionController.OnInteractPressed();
+        interactionController.OnInteractReleased();
     }
 
     private void OnInteractPressed(InputAction.CallbackContext obj)
     {
-        interactionController.OnInteractReleased();
+        interactionController.OnInteractPressed();
     }
 
     private void OnDisable()
     {
         inputActions.Disable();
+        
     }
 
     private void Update()

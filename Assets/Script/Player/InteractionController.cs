@@ -7,7 +7,7 @@ public class InteractionController : MonoBehaviour
 {
     [SerializeField] LayerMask layerMask;
 
-    private BaseInteractable currentInteractable;
+    [SerializeField] private BaseInteractable currentInteractable;
     public float holdTime;
     public bool interactPressed;
 
@@ -35,7 +35,7 @@ public class InteractionController : MonoBehaviour
                 currentInteractable.OnInteract();
                 ResetHold();
             }
-            else if(interactPressed)
+            else if(!currentInteractable.HoldInteraction && interactPressed)
             {
                 currentInteractable.OnInteract();
                 ResetHold();
