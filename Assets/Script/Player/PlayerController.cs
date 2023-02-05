@@ -55,7 +55,12 @@ public class PlayerController : MonoBehaviour
 
     private void GetActions()
     {
-        
+        GetRoll();
+    }
+
+    private bool GetRoll()
+    {
+        return inputActions.Player.Roll.triggered;
     }
 
     private void GetInputs()
@@ -64,7 +69,9 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = GetPlayerMovement();
          move = transform.right * movement.x + transform.forward * movement.y;
 
-         
+         move *= GetPlayerSprint() ? 2f : 1f;
+
+
          if (!characterController.isGrounded)
          {
              move.y += -9.82f;
@@ -78,6 +85,12 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        if (GetRoll()) Roll();
+    }
+
+    private void Roll()
+    {
+        characterController.Move(move * speed * 2f);
     }
 
     private void Move()
@@ -88,5 +101,10 @@ public class PlayerController : MonoBehaviour
     private Vector2 GetPlayerMovement()
     {
         return inputActions.Player.Move.ReadValue<Vector2>();
+    }
+    
+    private bool GetPlayerSprint()
+    {
+        return inputActions.Player.Sprint.IsPressed();
     }
 }
