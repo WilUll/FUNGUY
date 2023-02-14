@@ -79,10 +79,6 @@ public class InventoryManager : Singleton<InventoryManager>
 
         return item.item;
     }
-    {
-        InventoryItem item = slotsInHotbar[selectedSlotIndex].GetComponentInChildren<InventoryItem>();
-        return item != null ? item.item : null;
-    }
 
     private bool TryToAddItemToInventory(Item item)
     {
