@@ -784,6 +784,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 29140b84-d94e-4cfa-9c74-3b36eb2a88af
     m_ActionName: Player/Sprint[/Keyboard/shift]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2008347387}
+        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
+        m_MethodName: ScrollHotbar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f82760ae-9a8a-476f-8fb7-322dd66d9918
+    m_ActionName: Player/Hotbar[/Mouse/scroll/down,/Mouse/scroll/up]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -3545,7 +3561,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589932512}
-  m_LocalRotation: {x: 0.11625008, y: 0.00000001665617, z: -0.0000000019494986, w: 0.99322}
+  m_LocalRotation: {x: 0.11625008, y: -0.00000001665617, z: 0.0000000019494986, w: 0.99322}
   m_LocalPosition: {x: 0, y: 12.8, z: -20.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4517,7 +4533,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106757528}
-  m_LocalRotation: {x: 0.11625008, y: 0.00000001665617, z: -0.0000000019494986, w: 0.99322}
+  m_LocalRotation: {x: 0.11625008, y: -0.00000001665617, z: 0.0000000019494986, w: 0.99322}
   m_LocalPosition: {x: 0, y: 12.8, z: -20.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
