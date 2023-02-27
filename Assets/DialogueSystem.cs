@@ -23,11 +23,11 @@ public class DialogueSystem : MonoBehaviour
         choiceParent.gameObject.SetActive(false);
         ClearChoiceButtons();
         currentNode = dialogueNode;
-        currentNode.SetupNode(textContainer);
+        var text = currentNode.SetupNode(textContainer);
+        StartCoroutine(AnimateText(text));
         if (currentNode.GetType() == typeof(ChoiceNode))
         {
             Debug.Log("In Right Pos");
-            choiceParent.gameObject.SetActive(true);
             var choiceNode = (ChoiceNode)currentNode;
             foreach (var choiceNodeChoice in choiceNode.Choices)
             {
@@ -36,6 +36,21 @@ public class DialogueSystem : MonoBehaviour
                 button.GetComponent<Button>().onClick.AddListener(() => NextNode(choiceNodeChoice.NextNode));
                 button.transform.SetParent(choiceParent);
             }
+        }
+    }
+
+    private IEnumerator AnimateText(string text)
+    {
+        textContainer.text = "";
+        foreach (var character in text)
+        {
+            textContainer.text += character;
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        if (currentNode.GetType() == typeof(ChoiceNode))
+        {
+            choiceParent.gameObject.SetActive(true);
         }
     }
 

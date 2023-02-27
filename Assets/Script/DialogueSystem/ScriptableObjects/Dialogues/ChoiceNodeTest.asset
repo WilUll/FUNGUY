@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0ccc7ba1801a84687b34fb0ca216e0, type: 3}
   m_Name: ChoiceNodeTest
   m_EditorClassIdentifier: 
-  DialogueText: Hello
+  DialogueText: 'Hello, this is a test for the dialogue system! '
   NextNode: {fileID: 0}
   Choices:
-  - ChoiceText: Bye
-    NextNode: {fileID: 11400000, guid: f8fbf6f3e7a70044d86a13be2693247c, type: 2}
-  - ChoiceText: Hello
+  - ChoiceText: Wow thats amazing!
+    NextNode: {fileID: 11400000, guid: 78ab26a74bc303f4cb9c0ba21b7e0674, type: 2}
+  - ChoiceText: Ehh okay...
     NextNode: {fileID: 11400000, guid: 99f80357d74481f498141a0d76f59f1d, type: 2}

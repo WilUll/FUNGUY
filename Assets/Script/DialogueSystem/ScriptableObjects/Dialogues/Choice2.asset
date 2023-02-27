@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0ccc7ba1801a84687b34fb0ca216e0, type: 3}
   m_Name: Choice2
   m_EditorClassIdentifier: 
-  DialogueText: Wow choice 2
+  DialogueText: I know
   NextNode: {fileID: 0}
   Choices:
   - ChoiceText: Hello
