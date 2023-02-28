@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b249319e8a1b9643abc5ae0301c9ddb, type: 3}
   m_Name: TestingNode
   m_EditorClassIdentifier: 
-  DialogueText: Hello!!!
+  DialogueText: Well I thought it was...
   NextNode: {fileID: 11400000, guid: 78ab26a74bc303f4cb9c0ba21b7e0674, type: 2}

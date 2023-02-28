@@ -9,8 +9,9 @@ public class DialogueNode : ScriptableObject
     public string DialogueText;
     public DialogueNode NextNode;
 
-    public virtual void SetupNode(TMP_Text textContainer)
+    public virtual string SetupNode(TMP_Text textContainer)
     {
-        textContainer.text = DialogueText;
+        return DialogueText;
+        //textContainer.text = DialogueText;
     }
 }

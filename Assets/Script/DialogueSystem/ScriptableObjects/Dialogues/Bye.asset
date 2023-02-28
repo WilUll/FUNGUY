@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b249319e8a1b9643abc5ae0301c9ddb, type: 3}
   m_Name: Bye
   m_EditorClassIdentifier: 
-  DialogueText: Bye!!
+  DialogueText: 'I know! '
   NextNode: {fileID: 0}
