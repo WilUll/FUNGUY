@@ -57,10 +57,10 @@ public class SpritePrefabConfigurator : EditorWindow
     {
         foreach (GameObject gameObjects in Selection.gameObjects)
         {
-            GetChildRecursive(gameObjects);
-            foreach (GameObject child in listOfChildren)
+
+            if (gameObjects.transform.childCount == 0)
             {
-                var sr = child.GetComponent<SpriteRenderer>();
+                var sr = gameObjects.GetComponent<SpriteRenderer>();
                 sr.receiveShadows = true;
                 sr.shadowCastingMode = ShadowCastingMode.On;
                 
@@ -72,7 +72,25 @@ public class SpritePrefabConfigurator : EditorWindow
              
                 sr.material = newMat;
             }
-            listOfChildren.Clear();
+            else
+            {
+                GetChildRecursive(gameObjects);
+                foreach (GameObject child in listOfChildren)
+                {
+                    var sr = child.GetComponent<SpriteRenderer>();
+                    sr.receiveShadows = true;
+                    sr.shadowCastingMode = ShadowCastingMode.On;
+                
+                    Material newMat = (Material) AssetDatabase.LoadAssetAtPath(MAT_PATH, typeof(Material));
+                    if(newMat != null)
+                        Debug.Log("Asset loaded");
+                    else
+                        Debug.Log("cant find asset");
+             
+                    sr.material = newMat;
+                }
+                listOfChildren.Clear();
+            }
         }
     }
 
