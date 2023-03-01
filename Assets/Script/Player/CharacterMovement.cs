@@ -11,6 +11,8 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float movementSpeed = 5f;
     [SerializeField] private float runSpeedMultiplier = 2f;
     
+    [SerializeField] private Animator animator;
+    
     private CharacterController characterController;
     private Vector2 movementInput;
     private float defaultSpeedMultiplier = 1f;
@@ -22,7 +24,12 @@ public class CharacterMovement : MonoBehaviour
         currentSpeedMultiplier = defaultSpeedMultiplier;
     }
 
-    public void Move(InputAction.CallbackContext ctx) => movementInput = ctx.ReadValue<Vector2>();
+    public void Move(InputAction.CallbackContext ctx)
+    {
+        movementInput = ctx.ReadValue<Vector2>();
+        animator.SetFloat("Horizontal", movementInput.x);
+        animator.SetFloat("Vertical", movementInput.y);
+    }
     
     public void Sprint(InputAction.CallbackContext ctx) => currentSpeedMultiplier = ctx.performed ? runSpeedMultiplier : defaultSpeedMultiplier;
     private void FixedUpdate()
