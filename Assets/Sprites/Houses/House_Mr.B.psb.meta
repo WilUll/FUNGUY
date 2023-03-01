@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3fbf6fc68a748cc4684e474f57f40a3a
+guid: 521727afb9714124581b8b0c4c83e453
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ ScriptedImporter:
       y: 1360
       width: 235
       height: 522
-    spriteID: 5a8237fe03812484ba4594986073d6ea
+    spriteID: 816e30a5439adc9449e7753ce0ae4a30
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,7 +114,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 1360}
-    spritePosition: {x: 883, y: 479}
+    spritePosition: {x: 888, y: 479}
   - name: House01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -126,7 +126,7 @@ ScriptedImporter:
       y: 4
       width: 1939
       height: 1348
-    spriteID: e0e110ba81f436a4bba226a60e9b0cf3
+    spriteID: e905013489f3fab48b672252fd633a55
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -135,28 +135,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 31, y: 326}
-  - name: Layer 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1951
-      y: 4
-      width: 0
-      height: 0
-    spriteID: 679e04290512239479598915dfdcf5d9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1951, y: 4}
-    spritePosition: {x: 0, y: 2000}
+    spritePosition: {x: 36, y: 326}
   characterData:
     bones: []
     parts: []
@@ -195,8 +174,8 @@ ScriptedImporter:
     spriteName: Door01
     isGroup: 0
     parentIndex: -1
-    spriteID: 5a8237fe03812484ba4594986073d6ea
-    layerID: 10
+    spriteID: 816e30a5439adc9449e7753ce0ae4a30
+    layerID: 18
     mosaicPosition: {x: 4, y: 1360}
     flatten: 0
     isImported: 1
@@ -205,59 +184,9 @@ ScriptedImporter:
     spriteName: House01
     isGroup: 0
     parentIndex: -1
-    spriteID: e0e110ba81f436a4bba226a60e9b0cf3
-    layerID: 9
+    spriteID: e905013489f3fab48b672252fd633a55
+    layerID: 17
     mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Door02
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 07f1a75634a6b5b46881bdfbbc15fda4
-    layerID: 8
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Houser02
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 12b68532fddfcd547b78da58cd5eea7a
-    layerID: 7
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Business
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: fcc7ea74680a1094eb767024c6740c4a
-    layerID: 4
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Landlady
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8e639a6ba1a1c5d428f20c8fd41c5742
-    layerID: 5
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Layer 1
-    spriteName: Layer 1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 679e04290512239479598915dfdcf5d9
-    layerID: 2
-    mosaicPosition: {x: 1951, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6fd8ac053ab54264cb0635d5ee17f048
+guid: ca175484dfa783742a356ecb998a85fb
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,10 +102,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1487
-      width: 298
-      height: 560
-    spriteID: ea77c99aad5e68e4890f5c02d3ac79fd
+      y: 1470
+      width: 295
+      height: 553
+    spriteID: 98ab2213b72a6b54287024d958a563ea
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -113,8 +113,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1487}
-    spritePosition: {x: 1046, y: 334}
+    uvTransform: {x: 4, y: 1470}
+    spritePosition: {x: 1051, y: 343}
   - name: House03
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -124,9 +124,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1799
-      height: 1475
-    spriteID: c987a88f7fc72a74d81bce196063abcf
+      width: 1778
+      height: 1458
+    spriteID: 0c52c684ae99feb4fb5477ebc9f49592
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -135,28 +135,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 101, y: 262}
-  - name: Layer 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1811
-      y: 4
-      width: 0
-      height: 0
-    spriteID: 8416b3ae5a72e4b43b1c8a2a2d326f7c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1811, y: 4}
-    spritePosition: {x: 0, y: 2000}
+    spritePosition: {x: 117, y: 272}
   characterData:
     bones: []
     parts: []
@@ -191,23 +170,13 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Business
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 6067a25c5bcb2d648bc5d42846484332
-    layerID: 4
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Door03
     spriteName: Door03
     isGroup: 0
     parentIndex: -1
-    spriteID: ea77c99aad5e68e4890f5c02d3ac79fd
-    layerID: 12
-    mosaicPosition: {x: 4, y: 1487}
+    spriteID: 98ab2213b72a6b54287024d958a563ea
+    layerID: 20
+    mosaicPosition: {x: 4, y: 1470}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -215,69 +184,9 @@ ScriptedImporter:
     spriteName: House03
     isGroup: 0
     parentIndex: -1
-    spriteID: c987a88f7fc72a74d81bce196063abcf
-    layerID: 11
+    spriteID: 0c52c684ae99feb4fb5477ebc9f49592
+    layerID: 19
     mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Door01
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: ad8471813353d194da2766d7bb4614e0
-    layerID: 10
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: House01
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: bb7d168f8e3d9e644999fd2395f4cb26
-    layerID: 9
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Door02
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 81195fc13d4301143b8f55a9a8744a7c
-    layerID: 8
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Houser02
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 14d72f4380da8c9408b3211d7f48e4db
-    layerID: 7
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Landlady
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 2433f075db13f76458f9c108ea81c0b0
-    layerID: 5
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Layer 1
-    spriteName: Layer 1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8416b3ae5a72e4b43b1c8a2a2d326f7c
-    layerID: 2
-    mosaicPosition: {x: 1811, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1

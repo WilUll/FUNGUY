@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8408a7b1e9feee4468c88c2e50c66b37
+guid: ed92fa156e7c0904ab2f65fcb5c38427
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ ScriptedImporter:
       y: 1360
       width: 240
       height: 522
-    spriteID: 726a9f798b85b5c45b55b5fabe9401ce
+    spriteID: 18445af7fe82dd44d8a91045ea9c0d3a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -126,7 +126,7 @@ ScriptedImporter:
       y: 4
       width: 1938
       height: 1348
-    spriteID: c1c25d4526b14024d9d5590545e1e65b
+    spriteID: 6aaf58a731ae2a14186398b9ebb9e072
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -136,27 +136,6 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 31, y: 326}
-  - name: Layer 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1950
-      y: 4
-      width: 0
-      height: 0
-    spriteID: bbdc79af559caa84e8f50ade1dec98aa
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1950, y: 4}
-    spritePosition: {x: 0, y: 2000}
   characterData:
     bones: []
     parts: []
@@ -191,21 +170,11 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Landlady
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 262bafab49c42d24ab491172c611665f
-    layerID: 5
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Door02
     spriteName: Door02
     isGroup: 0
     parentIndex: -1
-    spriteID: 726a9f798b85b5c45b55b5fabe9401ce
+    spriteID: 18445af7fe82dd44d8a91045ea9c0d3a
     layerID: 8
     mosaicPosition: {x: 4, y: 1360}
     flatten: 0
@@ -215,29 +184,9 @@ ScriptedImporter:
     spriteName: Houser02
     isGroup: 0
     parentIndex: -1
-    spriteID: c1c25d4526b14024d9d5590545e1e65b
+    spriteID: 6aaf58a731ae2a14186398b9ebb9e072
     layerID: 7
     mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Business
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b5195b04edce47247999daf37c1157dc
-    layerID: 4
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Layer 1
-    spriteName: Layer 1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: bbdc79af559caa84e8f50ade1dec98aa
-    layerID: 2
-    mosaicPosition: {x: 1950, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
