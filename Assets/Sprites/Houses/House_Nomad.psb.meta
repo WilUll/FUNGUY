@@ -102,10 +102,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 295
-      y: 1590
+      y: 1567
       width: 432
       height: 312
-    spriteID: c5ba2c855b37a7147b38e3123f1d04fd
+    spriteID: 936ba7d1c60c6144cb0f0ddf57c62f87
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -113,7 +113,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 295, y: 1590}
+    uvTransform: {x: 295, y: 1567}
     spritePosition: {x: 1483, y: 284}
   - name: Spinner
     originalName: 
@@ -122,11 +122,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1899
+      x: 1780
       y: 4
       width: 114
-      height: 159
-    spriteID: d41cd1c7e3fb5c84a88b8c597f61c0fa
+      height: 157
+    spriteID: a8f3d0dd3e1df304abeaf1bb840df427
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -134,7 +134,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1899, y: 4}
+    uvTransform: {x: 1780, y: 4}
     spritePosition: {x: 1574, y: 1244}
   - name: Door04
     originalName: 
@@ -144,10 +144,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1590
+      y: 1567
       width: 283
       height: 625
-    spriteID: 8f33a0062977d0a4392330ae7b2fe2ab
+    spriteID: 1025132407fa9ff4e9a374318ac7fd94
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,7 +155,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1590}
+    uvTransform: {x: 4, y: 1567}
     spritePosition: {x: 687, y: 404}
   - name: House04
     originalName: 
@@ -166,9 +166,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1887
-      height: 1578
-    spriteID: 4cf8481b3ce029e43bb1994d160b5734
+      width: 1768
+      height: 1555
+    spriteID: 25b36da0b3e849349b9da0da2b018719
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -177,7 +177,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 63, y: 234}
+    spritePosition: {x: 63, y: 235}
   characterData:
     bones: []
     parts: []
@@ -216,9 +216,9 @@ ScriptedImporter:
     spriteName: Generator
     isGroup: 0
     parentIndex: -1
-    spriteID: c5ba2c855b37a7147b38e3123f1d04fd
+    spriteID: 936ba7d1c60c6144cb0f0ddf57c62f87
     layerID: 24
-    mosaicPosition: {x: 295, y: 1590}
+    mosaicPosition: {x: 295, y: 1567}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -226,9 +226,9 @@ ScriptedImporter:
     spriteName: Spinner
     isGroup: 0
     parentIndex: -1
-    spriteID: d41cd1c7e3fb5c84a88b8c597f61c0fa
+    spriteID: a8f3d0dd3e1df304abeaf1bb840df427
     layerID: 23
-    mosaicPosition: {x: 1899, y: 4}
+    mosaicPosition: {x: 1780, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -236,9 +236,9 @@ ScriptedImporter:
     spriteName: Door04
     isGroup: 0
     parentIndex: -1
-    spriteID: 8f33a0062977d0a4392330ae7b2fe2ab
+    spriteID: 1025132407fa9ff4e9a374318ac7fd94
     layerID: 22
-    mosaicPosition: {x: 4, y: 1590}
+    mosaicPosition: {x: 4, y: 1567}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -246,7 +246,7 @@ ScriptedImporter:
     spriteName: House04
     isGroup: 0
     parentIndex: -1
-    spriteID: 4cf8481b3ce029e43bb1994d160b5734
+    spriteID: 25b36da0b3e849349b9da0da2b018719
     layerID: 21
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
