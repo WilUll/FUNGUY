@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 71ea1ca192363c04db6d015e9e9bcf96
+guid: 4334db62e65fe084d9ff386499d78618
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,7 +94,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Crown05
+  - name: Layer 13
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,10 +102,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1565
-      width: 738
-      height: 678
-    spriteID: 291d55fb646fe5447a3189c566d37588
+      y: 531
+      width: 354
+      height: 325
+    spriteID: ed9710740172192438075d5a0404ef0c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -113,41 +113,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1565}
-    spritePosition: {x: 477, y: 1185}
-  - name: Crown04
+    uvTransform: {x: 4, y: 531}
+    spritePosition: {x: 113, y: 240}
+  - name: Layer 11
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 685
-      y: 2251
-      width: 379
-      height: 371
-    spriteID: bfb7622bbe9a6df4eb1993e63d584a5a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 685, y: 2251}
-    spritePosition: {x: 637, y: 756}
-  - name: Crown03
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1114
+      x: 493
       y: 4
-      width: 663
-      height: 583
-    spriteID: 6264643c7516440469cbda6b4d4d6bc6
+      width: 300
+      height: 281
+    spriteID: 917658d3402dec24bb5cc5b0d97307ec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,51 +134,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1114, y: 4}
-    spritePosition: {x: 1062, y: 741}
-  - name: Crown02
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2251
-      width: 673
-      height: 647
-    spriteID: 8c0cfbcb153a239409bb30634231c155
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 2251}
-    spritePosition: {x: 946, y: 1089}
-  - name: Crown01
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2906
-      width: 680
-      height: 638
-    spriteID: a65b1e66f5f726e4d834df83fc65c4df
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 2906}
-    spritePosition: {x: 275, y: 809}
-  - name: Trunk
+    uvTransform: {x: 493, y: 4}
+    spritePosition: {x: 588, y: 240}
+  - name: Layer 15
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -208,9 +145,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1102
-      height: 1553
-    spriteID: 13d084143aea32c438554db81411f007
+      width: 481
+      height: 519
+    spriteID: e5dc5f0208757bf42944677fb563353c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -219,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 500, y: 138}
+    spritePosition: {x: 282, y: 240}
   characterData:
     bones: []
     parts: []
@@ -254,62 +191,32 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Crown05
-    spriteName: Crown05
+  - name: Layer 13
+    spriteName: Layer 13
     isGroup: 0
     parentIndex: -1
-    spriteID: 291d55fb646fe5447a3189c566d37588
+    spriteID: ed9710740172192438075d5a0404ef0c
+    layerID: 16
+    mosaicPosition: {x: 4, y: 531}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 11
+    spriteName: Layer 11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 917658d3402dec24bb5cc5b0d97307ec
     layerID: 14
-    mosaicPosition: {x: 4, y: 1565}
+    mosaicPosition: {x: 493, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Crown04
-    spriteName: Crown04
+  - name: Layer 15
+    spriteName: Layer 15
     isGroup: 0
     parentIndex: -1
-    spriteID: bfb7622bbe9a6df4eb1993e63d584a5a
-    layerID: 13
-    mosaicPosition: {x: 685, y: 2251}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Crown03
-    spriteName: Crown03
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 6264643c7516440469cbda6b4d4d6bc6
-    layerID: 12
-    mosaicPosition: {x: 1114, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Crown02
-    spriteName: Crown02
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8c0cfbcb153a239409bb30634231c155
-    layerID: 11
-    mosaicPosition: {x: 4, y: 2251}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Crown01
-    spriteName: Crown01
-    isGroup: 0
-    parentIndex: -1
-    spriteID: a65b1e66f5f726e4d834df83fc65c4df
-    layerID: 10
-    mosaicPosition: {x: 4, y: 2906}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Trunk
-    spriteName: Trunk
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 13d084143aea32c438554db81411f007
-    layerID: 9
+    spriteID: e5dc5f0208757bf42944677fb563353c
+    layerID: 18
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
