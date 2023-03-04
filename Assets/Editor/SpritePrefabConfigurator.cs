@@ -35,6 +35,41 @@ public class SpritePrefabConfigurator : EditorWindow
             AddShadows();
         }
         
+        if (GUILayout.Button("Snap to Ground"))
+        {
+            SnapToGround();
+        }
+        
+        GUILayout.BeginHorizontal();
+        if (GUILayout.Button("Redo"))
+        {
+            Undo.PerformRedo();
+
+        }
+        if (GUILayout.Button("Undo"))
+        {
+            Undo.PerformUndo();
+        }
+        GUILayout.EndHorizontal();
+        
+    }
+
+    private void SnapToGround()
+    {
+        foreach (var transform in Selection.transforms)
+        {
+            var hits = Physics.RaycastAll(transform.position + Vector3.up, Vector3.down, 50f);
+            foreach (var hit in hits)
+            {
+                if (hit.collider.gameObject == transform.gameObject)
+                    continue;
+                Undo.RecordObject(transform, "SnappedObjects");
+
+                transform.position = hit.point;
+
+                break;
+            }
+        }
     }
 
     private void AddSortingGroup()
