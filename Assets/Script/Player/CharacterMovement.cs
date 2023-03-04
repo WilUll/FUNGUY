@@ -50,6 +50,11 @@ public class CharacterMovement : MonoBehaviour
             if (Physics.Raycast(mousePosition, out RaycastHit hit))
             {
                 clicked = true; 
+
+                if (hit.collider.GetComponent<Interactable>())
+                {
+                    StartCoroutine(PickUpItem(hit.collider.GetComponent<Interactable>()));
+                }
                 Vector3 direction = hit.point - transform.position;
                 direction.Normalize();
                 pointer.position = hit.point;
@@ -58,7 +63,25 @@ public class CharacterMovement : MonoBehaviour
             }
         }
     }
+
+    private IEnumerator PickUpItem(Interactable interactableObject)
+    {
+        while (clicked)
+        {
+            Debug.Log("Waiting");
+            yield return new WaitForFixedUpdate();
+        }
+
+        if (Vector3.Distance(transform.position.XZPlane(), interactableObject.transform.position.XZPlane()) <= 2)
+        {
+            animator.SetTrigger("Interact");
+            yield return new WaitForSeconds(0.415f);
+            interactableObject.PickUp();
+        }
+    }
     
+    
+
     public void Sprint(InputAction.CallbackContext ctx) => currentSpeedMultiplier = ctx.performed ? runSpeedMultiplier : defaultSpeedMultiplier;
     private void FixedUpdate()
     {
@@ -67,7 +90,6 @@ public class CharacterMovement : MonoBehaviour
         if (clicked)
         {
             var dist = Vector3.Distance(transform.position.XZPlane(), clickedPosition.XZPlane());
-            Debug.Log(dist);
             if (dist < stoppingDistance)
             {
                 clicked = false;
@@ -79,7 +101,5 @@ public class CharacterMovement : MonoBehaviour
         animator.SetFloat("Vertical", velocity.z);
         
         characterController.Move(velocity * Time.fixedDeltaTime);
-
-
     }
 }

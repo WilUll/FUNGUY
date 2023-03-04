@@ -80,6 +80,7 @@ Material:
     - _DstBlend: 10
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
+    - _HighLight: 0
     - _OpaqueCullMode: 2
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -115,8 +116,11 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
+    - _Default: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _Emission: {r: 0.077927664, g: 0.2287874, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HighLightColor: {r: 0.5943396, g: 0.5700288, b: 0.36165005, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &1510482970900841654
 MonoBehaviour:

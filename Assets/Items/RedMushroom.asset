@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   action: 0
-  image: {fileID: -3028111864535539599, guid: f8da19bce8793e941ab67af04a5b6a14, type: 3}
+  image: {fileID: 21300000, guid: 59692fe0b2dde4444a7d47e51e3a1088, type: 3}
   stackable: 1
