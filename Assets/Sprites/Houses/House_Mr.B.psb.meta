@@ -102,7 +102,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1360
+      y: 1352
       width: 235
       height: 522
     spriteID: 816e30a5439adc9449e7753ce0ae4a30
@@ -113,8 +113,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1360}
-    spritePosition: {x: 888, y: 479}
+    uvTransform: {x: 4, y: 1352}
+    spritePosition: {x: 863, y: 145}
   - name: House01
     originalName: 
     pivot: {x: 0.50120234, y: 0.0070616174}
@@ -135,7 +135,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 36, y: 326}
+    spritePosition: {x: 11, y: 0}
   characterData:
     bones: []
     parts: []
@@ -209,7 +209,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 816e30a5439adc9449e7753ce0ae4a30
     layerID: 18
-    mosaicPosition: {x: 4, y: 1360}
+    mosaicPosition: {x: 4, y: 1352}
     flatten: 0
     isImported: 1
     isVisible: 1

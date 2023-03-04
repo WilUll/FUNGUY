@@ -101,8 +101,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 295
-      y: 1567
+      x: 4
+      y: 1512
       width: 432
       height: 312
     spriteID: 936ba7d1c60c6144cb0f0ddf57c62f87
@@ -113,8 +113,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 295, y: 1567}
-    spritePosition: {x: 1483, y: 284}
+    uvTransform: {x: 4, y: 1512}
+    spritePosition: {x: 1403, y: 0}
   - name: Spinner
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -122,8 +122,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1780
-      y: 4
+      x: 425
+      y: 1512
       width: 114
       height: 157
     spriteID: a8f3d0dd3e1df304abeaf1bb840df427
@@ -134,8 +134,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1780, y: 4}
-    spritePosition: {x: 1574, y: 1244}
+    uvTransform: {x: 425, y: 1512}
+    spritePosition: {x: 1494, y: 954}
   - name: Door04
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -143,8 +143,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1567
+      x: 1760
+      y: 4
       width: 283
       height: 625
     spriteID: 1025132407fa9ff4e9a374318ac7fd94
@@ -155,8 +155,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1567}
-    spritePosition: {x: 687, y: 404}
+    uvTransform: {x: 1760, y: 4}
+    spritePosition: {x: 607, y: 114}
   - name: House04
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -177,7 +177,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 63, y: 235}
+    spritePosition: {x: 3, y: 0}
   characterData:
     bones: []
     parts: []
@@ -218,7 +218,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 936ba7d1c60c6144cb0f0ddf57c62f87
     layerID: 24
-    mosaicPosition: {x: 295, y: 1567}
+    mosaicPosition: {x: 4, y: 1512}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -228,7 +228,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: a8f3d0dd3e1df304abeaf1bb840df427
     layerID: 23
-    mosaicPosition: {x: 1780, y: 4}
+    mosaicPosition: {x: 425, y: 1512}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -238,7 +238,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 1025132407fa9ff4e9a374318ac7fd94
     layerID: 22
-    mosaicPosition: {x: 4, y: 1567}
+    mosaicPosition: {x: 1760, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
