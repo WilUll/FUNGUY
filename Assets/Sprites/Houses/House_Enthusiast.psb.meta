@@ -102,7 +102,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1470
+      y: 1464
       width: 295
       height: 553
     spriteID: 98ab2213b72a6b54287024d958a563ea
@@ -113,20 +113,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1470}
-    spritePosition: {x: 1051, y: 343}
-  - name: House03
+    uvTransform: {x: 4, y: 1464}
+    spritePosition: {x: 1026, y: 65}
+  - name: Layer 2
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1778
-      height: 1458
-    spriteID: 0c52c684ae99feb4fb5477ebc9f49592
+      width: 1939
+      height: 1452
+    spriteID: 4d1f767cccc7821458d8ee9d74a143db
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -135,7 +135,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 117, y: 272}
+    spritePosition: {x: 13, y: 0}
   characterData:
     bones: []
     parts: []
@@ -209,16 +209,16 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 98ab2213b72a6b54287024d958a563ea
     layerID: 20
-    mosaicPosition: {x: 4, y: 1470}
+    mosaicPosition: {x: 4, y: 1464}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: House03
-    spriteName: House03
+  - name: Layer 2
+    spriteName: Layer 2
     isGroup: 0
     parentIndex: -1
-    spriteID: 0c52c684ae99feb4fb5477ebc9f49592
-    layerID: 19
+    spriteID: 4d1f767cccc7821458d8ee9d74a143db
+    layerID: 22
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
