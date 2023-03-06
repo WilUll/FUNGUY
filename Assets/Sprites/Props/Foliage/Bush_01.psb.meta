@@ -102,7 +102,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 531
+      y: 526
       width: 354
       height: 325
     spriteID: ed9710740172192438075d5a0404ef0c
@@ -113,8 +113,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 531}
-    spritePosition: {x: 113, y: 240}
+    uvTransform: {x: 4, y: 526}
+    spritePosition: {x: 0, y: 0}
   - name: Layer 11
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -135,7 +135,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 493, y: 4}
-    spritePosition: {x: 588, y: 240}
+    spritePosition: {x: 475, y: 0}
   - name: Layer 15
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -156,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 282, y: 240}
+    spritePosition: {x: 169, y: 0}
   characterData:
     bones: []
     parts: []
@@ -197,7 +197,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: ed9710740172192438075d5a0404ef0c
     layerID: 16
-    mosaicPosition: {x: 4, y: 531}
+    mosaicPosition: {x: 4, y: 526}
     flatten: 0
     isImported: 1
     isVisible: 1
