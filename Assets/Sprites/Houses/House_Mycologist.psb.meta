@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3e5000e323b0ab5478881c6794dd3ae9
+guid: 6901ec9546eae6c47820c4ef673931e4
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 60
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -94,18 +94,18 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Generator
+  - name: Door
     originalName: 
-    pivot: {x: 0.4999998, y: 0.014268141}
+    pivot: {x: 0.97358817, y: 0.49999982}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 1514
-      width: 432
-      height: 312
-    spriteID: 936ba7d1c60c6144cb0f0ddf57c62f87
+      y: 1277
+      width: 320
+      height: 669
+    spriteID: a1592a7f1e813ae4a9dce188c21ecb74
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -113,62 +113,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1512}
-    spritePosition: {x: 1403, y: 0}
-  - name: Spinner
+    uvTransform: {x: 4, y: 1277}
+    spritePosition: {x: 731, y: 0}
+  - name: House
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 425
-      y: 1512
-      width: 114
-      height: 157
-    spriteID: a8f3d0dd3e1df304abeaf1bb840df427
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 425, y: 1512}
-    spritePosition: {x: 1494, y: 954}
-  - name: Door04
-    originalName: 
-    pivot: {x: 1.0025514, y: 0.50373036}
+    pivot: {x: 0.49869597, y: 0.0023651002}
     alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1760
-      y: 6
-      width: 283
-      height: 625
-    spriteID: 1025132407fa9ff4e9a374318ac7fd94
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1760, y: 4}
-    spritePosition: {x: 607, y: 114}
-  - name: House04
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1768
-      height: 1555
-    spriteID: 25b36da0b3e849349b9da0da2b018719
+      width: 1788
+      height: 1265
+    spriteID: 8616a3d30c3abf242bfdadf294e1c089
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -177,7 +135,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 3, y: 0}
+    spritePosition: {x: 17, y: 0}
   characterData:
     bones: []
     parts: []
@@ -245,42 +203,22 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Generator
-    spriteName: Generator
+  - name: Door
+    spriteName: Door
     isGroup: 0
     parentIndex: -1
-    spriteID: 936ba7d1c60c6144cb0f0ddf57c62f87
-    layerID: 24
-    mosaicPosition: {x: 4, y: 1512}
+    spriteID: a1592a7f1e813ae4a9dce188c21ecb74
+    layerID: 27
+    mosaicPosition: {x: 4, y: 1277}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Spinner
-    spriteName: Spinner
+  - name: House
+    spriteName: House
     isGroup: 0
     parentIndex: -1
-    spriteID: a8f3d0dd3e1df304abeaf1bb840df427
-    layerID: 23
-    mosaicPosition: {x: 425, y: 1512}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Door04
-    spriteName: Door04
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 1025132407fa9ff4e9a374318ac7fd94
-    layerID: 22
-    mosaicPosition: {x: 1760, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: House04
-    spriteName: House04
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 25b36da0b3e849349b9da0da2b018719
-    layerID: 21
+    spriteID: 8616a3d30c3abf242bfdadf294e1c089
+    layerID: 26
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
