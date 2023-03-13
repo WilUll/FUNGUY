@@ -104,6 +104,33 @@ public class InventoryManager : Singleton<InventoryManager>
 
         return false;
     }
+    
+    private bool TryToRemoveItemFromInventory(Item item)
+    {
+        foreach (var slot in slotsInInventory)
+        {
+            InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+            if (itemInSlot.item == item)
+            {
+                itemInSlot.itemAmount--;
+                itemInSlot.RefreshAmount();
+                return true;
+            }
+        }
+        
+        foreach (var slot in slotsInHotbar)
+        {
+            InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+            if (itemInSlot.item == item)
+            {
+                itemInSlot.itemAmount--;
+                itemInSlot.RefreshAmount();
+                return true;
+            }
+        }
+        
+        return false;
+    }
 
     private bool ItemIsInInventory(Item item)
     {
@@ -132,5 +159,34 @@ public class InventoryManager : Singleton<InventoryManager>
         }
 
         return false;
+    }
+
+    public int TimesItemIsInInventory(Item item)
+    {
+        int itemCount = 0;
+        foreach (var slot in slotsInHotbar)
+        {
+            InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+            if (itemInSlot != null && itemInSlot.item == item && itemInSlot.itemAmount < stackLimit)
+            {
+                itemCount += itemInSlot.itemAmount;
+            }
+        }
+
+        foreach (var slot in slotsInInventory)
+        {
+            InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+            if (itemInSlot != null && itemInSlot.item == item && itemInSlot.itemAmount < stackLimit)
+            {
+                itemCount += itemInSlot.itemAmount;
+            }
+        }
+
+        return itemCount;
+    }
+
+    public bool RemoveItem(Item item)
+    {
+        return ItemIsInInventory(item) || TryToRemoveItemFromInventory(item);
     }
 }
