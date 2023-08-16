@@ -1,39 +1,43 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class RecipieItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] Recipe recipe;
 
-    public bool CanCraft()
+    private void Start()
     {
-        if (InventoryManager.Instance != null)
+        GetComponent<Image>().sprite = recipe.foodToCreate.image;
+
+    }
+
+    public void CheckIfCraftable()
+    {
+        if (!recipe.CanCraft())
         {
-            foreach (Ingredient ingredient in recipe.ingredients)
-            {
-                if (InventoryManager.Instance.TimesItemIsInInventory(ingredient.Item) < ingredient.Amount)
-                {
-                    return false;
-                }
-            }
-
-            return true;
+            GetComponent<Image>().color = new Color(1,1,1, 0.5f);
         }
+        else
+        {
+            GetComponent<Image>().color = new Color(1,1,1, 1);
+        }
+    }
 
-        return false;
+    private void OnEnable()
+    {
+        CheckIfCraftable();
     }
     
-    //TODO
-    //Craft the item
-    //Fix UI
-    //Add more recipes
-
-
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log(CanCraft());
+        if (recipe.CanCraft())
+        {
+            CookingManager.Instance.OnRecipeClicked(recipe);
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)

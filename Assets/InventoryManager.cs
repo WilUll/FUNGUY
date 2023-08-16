@@ -107,17 +107,6 @@ public class InventoryManager : Singleton<InventoryManager>
     
     private bool TryToRemoveItemFromInventory(Item item)
     {
-        foreach (var slot in slotsInInventory)
-        {
-            InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
-            if (itemInSlot.item == item)
-            {
-                itemInSlot.itemAmount--;
-                itemInSlot.RefreshAmount();
-                return true;
-            }
-        }
-        
         foreach (var slot in slotsInHotbar)
         {
             InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
@@ -125,6 +114,24 @@ public class InventoryManager : Singleton<InventoryManager>
             {
                 itemInSlot.itemAmount--;
                 itemInSlot.RefreshAmount();
+                
+                if (itemInSlot.itemAmount <= 0)
+                    Destroy(itemInSlot.gameObject);
+                else
+                    itemInSlot.RefreshAmount();
+                return true;
+            }
+        }
+        
+        foreach (var slot in slotsInInventory)
+        {
+            InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+            if (itemInSlot.item == item)
+            {
+                if (itemInSlot.itemAmount <= 0)
+                    Destroy(itemInSlot.gameObject);
+                else
+                    itemInSlot.RefreshAmount();
                 return true;
             }
         }
@@ -187,6 +194,6 @@ public class InventoryManager : Singleton<InventoryManager>
 
     public bool RemoveItem(Item item)
     {
-        return ItemIsInInventory(item) || TryToRemoveItemFromInventory(item);
+        return TryToRemoveItemFromInventory(item);
     }
 }
